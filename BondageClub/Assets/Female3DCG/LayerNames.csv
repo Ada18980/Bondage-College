@@ -326,3 +326,7 @@ MaskFoxMaskUpper,Upper
 MaskFoxMaskLower,Lower
 MaskKittyMask3Highlights,Highlights
 MaskKittyMask3Mask,Mask
+SuitLowerPilotSuitLayer1,Suit
+SuitLowerPilotSuitLayer2,Highlights
+SuitLowerPilotSuitLayer3,Center
+SuitLowerPilotSuitLayer4,Underlayment
