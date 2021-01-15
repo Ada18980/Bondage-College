@@ -1029,6 +1029,11 @@ function ChatRoomCharacterItemUpdate(C, Group) {
 		P.Difficulty = (Item != null) ? (Item.Difficulty - Item.Asset.Difficulty) : SkillGetWithRatio("Bondage");
 		P.Property = ((Item != null) && (Item.Property != null)) ? Item.Property : undefined;
 		ServerSend("ChatRoomCharacterItemUpdate", P);
+		
+		
+		if (C != 0 && C.IsOwnedByPlayer()) {
+			ServerSend("AccountTamper", {MemberNumber: C.MemberNumber, Appearance: ServerAppearanceBundle(C.Appearance)});
+		}
 	}
 }
 

@@ -323,6 +323,8 @@ function CharacterOnlineRefresh(Char, data, SourceMemberNumber) {
 	Char.Reputation = (data.Reputation != null) ? data.Reputation : [];
 	Char.BlockItems = Array.isArray(data.BlockItems) ? data.BlockItems : [];
 	Char.LimitedItems = Array.isArray(data.LimitedItems) ? data.LimitedItems : [];
+	Char.TamperViolationCount = data.TamperViolationCount;
+	Char.TamperViolationTime = data.TamperViolationTime;
 	if (Char.ID != 0) Char.WhiteList = data.WhiteList;
 	Char.Appearance = ServerAppearanceLoadFromBundle(Char, "Female3DCG", data.Appearance, SourceMemberNumber);
 	if (Char.ID == 0) LoginValidCollar();
@@ -369,6 +371,8 @@ function CharacterLoadOnline(data, SourceMemberNumber) {
 		Char.MemberNumber = data.MemberNumber;
 		Char.Difficulty = data.Difficulty;
 		Char.AllowItem = false;
+		Char.TamperViolationCount = data.TamperViolationCount;
+		Char.TamperViolationTime = data.TamperViolationTime;
 		CharacterLoadCSVDialog(Char, "Screens/Online/ChatRoom/Dialog_Online");
 		CharacterOnlineRefresh(Char, data, SourceMemberNumber);
 
@@ -728,6 +732,8 @@ function CharacterRefresh(C, Push) {
 				DialogMenuButtonBuild(C);
 			}
 		}
+		
+
 	}
 }
 
