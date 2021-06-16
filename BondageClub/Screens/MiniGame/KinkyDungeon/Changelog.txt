@@ -53,6 +53,10 @@ Other
 Features
 - Streaming mode to watch your friends play!
 
+1.5 (July 2021)
+Balance Changes
+-Chainbolt no longer does damage, but stuns regular enemies for 4 turns
+
 Future content planned:
 - Exit stair puzzles (like for example a button or special key somewhere in the level, maybe with a high likelihood of traps)
 - Inescapable yoke that needs keys, but the trap also summons rats that steal the keys and run away
