@@ -87,6 +87,14 @@ Future content planned:
 - Inventory management system T_T
 - Vines in the undergrorund jungle (when it gets implemented)
 
+-Less mummy shrines, shrines should be generic
+-Traps and tripwires
+-Doors that are trapped but you can unlock the trap to disarm
+-Spells should be more useful besides leap / fireball
+-Goddess of time
+-Goddess that gives a banked blessing that improves struggle
+-Difficulty tooltip for picking, struggle, etc
+
 Spell Ideas:
 - Clear Jam spell, which clears jammed green locks from either an object or the player, depending on where it is cast
 - Divine Cuffs, a spell which gives you glowing arm and leg cuffs that block low level restraints from being put on you. Lasts 10 turns.
